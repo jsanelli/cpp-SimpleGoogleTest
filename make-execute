@@ -1,0 +1,9 @@
+#!/bin/bash
+#remove artificacts
+rm -f CMakeCache.txt
+rm -f executeTests
+rm -f results.txt
+
+cmake CMakeLists.txt
+make
+./executeTests > results.txt
