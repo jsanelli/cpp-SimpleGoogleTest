@@ -7,5 +7,4 @@ make
 ./runApp  
 cat results.txt  
 
-
 ./removeArtifacts  
