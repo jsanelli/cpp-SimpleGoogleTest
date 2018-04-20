@@ -4,7 +4,6 @@ baseline mostly verbatim from [srcmake](https://www.srcmake.com/home/google-cpp-
 cd build  
 cmake ..  
 make  
-./runApp  
-cat results.txt  
+./convenienceScript
 
 ./removeArtifacts  
