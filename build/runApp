@@ -1,0 +1,3 @@
+#!/bin/bash
+./executeTests > results.txt
+cat results.txt
