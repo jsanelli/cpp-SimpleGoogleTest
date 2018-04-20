@@ -7,6 +7,10 @@ set(TARGET_NAME runTests)
 find_package(GTest REQUIRED)
 include_directories(${GTEST_INCLUDE_DIRS})
  
-#Link runTests with what we want to test and the GTest and pthread library
-add_executable(${TARGET_NAME} test.cc)
+#add_executable(${TARGET_NAME} test.cc)
+file(GLOB SOURCES "*.cc")
+#file(GLOB SOURCES "src/*.cc")
+add_executable (${TARGET_NAME} ${SOURCES})
+
+#Link target with what we want to test and the GTest and pthread library
 target_link_libraries(${TARGET_NAME} ${GTEST_LIBRARIES} pthread)
