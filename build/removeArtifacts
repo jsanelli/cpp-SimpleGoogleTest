@@ -3,7 +3,7 @@
 #remove artificacts
 rm -f ../CMakeCache.txt
 rm -f ../executeTests
-rm -f results.txt
+#rm -f results.txt
 
 rm -f CMakeCache.txt
 rm -rf CMakeFiles

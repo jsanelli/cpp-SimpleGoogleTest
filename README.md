@@ -6,3 +6,6 @@ cmake ..
 make  
 ./runApp  
 cat results.txt  
+
+
+./removeArtifacts  
