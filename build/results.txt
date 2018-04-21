@@ -2,6 +2,16 @@
 [----------] Global test environment set-up.
 [----------] 1 test from GetChar
 [ RUN      ] GetChar.SubTest1
+i = 0
+i = 1
+i = 2
+i = 3
+i = 4
+i = 5
+i = 6
+i = 7
+i = 8
+i = 9
 [       OK ] GetChar.SubTest1 (0 ms)
 [----------] 1 test from GetChar (0 ms total)
 
@@ -11,5 +21,5 @@
 [----------] 1 test from GetSquare (0 ms total)
 
 [----------] Global test environment tear-down
-[==========] 2 tests from 2 test cases ran. (0 ms total)
+[==========] 2 tests from 2 test cases ran. (1 ms total)
 [  PASSED  ] 2 tests.
