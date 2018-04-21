@@ -1,18 +1,22 @@
-[==========] Running 1 test from 1 test case.
+[==========] Running 4 tests from 3 test cases.
 [----------] Global test environment set-up.
-[----------] 1 test from HelloWorldTestNumberOne
-[ RUN      ] HelloWorldTestNumberOne.PositiveNos
-/home/john/cpp-SimpleGoogleTest/test/test.cc:6: Failure
-      Expected: 66
-To be equal to: squareRoot(36.0)
-      Which is: 6
-[  FAILED  ] HelloWorldTestNumberOne.PositiveNos (0 ms)
-[----------] 1 test from HelloWorldTestNumberOne (0 ms total)
+[----------] 2 tests from HelloWorldTestNumberOne
+[ RUN      ] HelloWorldTestNumberOne.SubTestOne
+[       OK ] HelloWorldTestNumberOne.SubTestOne (0 ms)
+[ RUN      ] HelloWorldTestNumberOne.SubTestTwo
+[       OK ] HelloWorldTestNumberOne.SubTestTwo (0 ms)
+[----------] 2 tests from HelloWorldTestNumberOne (0 ms total)
+
+[----------] 1 test from HelloWorldTestNumberTwo
+[ RUN      ] HelloWorldTestNumberTwo.SubTestOne
+[       OK ] HelloWorldTestNumberTwo.SubTestOne (0 ms)
+[----------] 1 test from HelloWorldTestNumberTwo (0 ms total)
+
+[----------] 1 test from GetChar
+[ RUN      ] GetChar.SubTest1
+[       OK ] GetChar.SubTest1 (0 ms)
+[----------] 1 test from GetChar (0 ms total)
 
 [----------] Global test environment tear-down
-[==========] 1 test from 1 test case ran. (0 ms total)
-[  PASSED  ] 0 tests.
-[  FAILED  ] 1 test, listed below:
-[  FAILED  ] HelloWorldTestNumberOne.PositiveNos
-
- 1 FAILED TEST
+[==========] 4 tests from 3 test cases ran. (0 ms total)
+[  PASSED  ] 4 tests.
