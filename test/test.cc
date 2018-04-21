@@ -20,7 +20,11 @@ TEST(GetChar, SubTest1) {
   //test public functions
   alice.SaySomething();
   // test private functions
-  ASSERT_TRUE(testspeak.TestGetI()); 
+
+  // testspeak
+  ASSERT_TRUE(testspeak.TestI(123));  
+
+
 }
 
 TEST(GetSquare, SubTest1) {

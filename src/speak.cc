@@ -1,15 +1,8 @@
 #include <gtest/gtest.h>
-
 #include <iostream>
-
 #include "../include/speak.h"
 
-TestSpeak::TestSpeak() {
-}
-
-TestSpeak::~TestSpeak() {
-}
-
+// Speak //
 Speak::Speak() {
   i_ = 2;
 }
@@ -21,15 +14,8 @@ Speak::Speak(int i) {
 Speak::~Speak() {
 }
 
-bool TestSpeak::TestGetI() {
- return false; // false = fail
-}
-
-bool Speak::TestGetI() {
- bool retval = false;
- if (GetI() == i_)
-   retval = true;
- return retval; // false = fail
+void Speak::SetI(int i) {
+  i_ = i;
 }
 
 int Speak::GetI() {
@@ -38,4 +24,15 @@ int Speak::GetI() {
 
 void Speak::SaySomething() {
   std::cout << "Hello Class, your number is " << GetI() << std::endl;
+}
+
+// TestSpeak //
+TestSpeak::TestSpeak() {
+}
+
+TestSpeak::~TestSpeak() {
+}
+
+bool TestSpeak::TestI(int i) {
+  return false; // false denotes fail
 }
