@@ -17,14 +17,10 @@ TEST(GetChar, SubTest1) {
     ASSERT_EQ(i, GetChar(i));
   }
 
-  //test public functions
+  // test public functions
   alice.SaySomething();
   // test private functions
-
-  // testspeak
   ASSERT_TRUE(testspeak.GetConclusion());  
-
-
 }
 
 TEST(GetSquare, SubTest1) {
