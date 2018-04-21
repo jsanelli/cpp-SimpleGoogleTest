@@ -9,8 +9,10 @@
 TEST(GetChar, SubTest1) {
   auto min = 0;
   auto count = 300;
+  auto result = false;
 
   Speak alice;
+  TestSpeak testspeak;
 
   for (auto i=min; i<count; i++) {
     ASSERT_EQ(i, GetChar(i));
@@ -18,7 +20,8 @@ TEST(GetChar, SubTest1) {
 
   alice.SaySomething();
   //alice.GetI();
-
+  result = testspeak.TestGetI();
+  ASSERT_EQ(true, testspeak.TestGetI());
 }
 
 TEST(GetSquare, SubTest1) {

@@ -5,6 +5,8 @@ class TestSpeak {
 public:
   TestSpeak();
   ~TestSpeak();
+
+  bool TestGetI();
 };
 
 //class Speak {
@@ -16,7 +18,7 @@ public:
 
   void SaySomething();
 protected:
-  ; // int GetI();
+  bool TestGetI();
 private:
   int i_;
 

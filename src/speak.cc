@@ -21,6 +21,10 @@ Speak::Speak(int i) {
 Speak::~Speak() {
 }
 
+bool TestSpeak::TestGetI() {
+ return false; // false = fail
+}
+
 int Speak::GetI() {
   return i_;
 }
