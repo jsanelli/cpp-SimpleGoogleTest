@@ -1,8 +1,6 @@
-#include <iostream> 
-
 #include <gtest/gtest.h>
 
-#include "../src/get_char.cc"
+#include "../src/get_number.cc"
 #include "../src/get_square.cc"
  
 TEST(GetChar, SubTest1) {
@@ -11,7 +9,6 @@ TEST(GetChar, SubTest1) {
 
   for (auto i=min; i<count; i++) {
     ASSERT_EQ(i, GetChar(i));
-    std::cout << "i = " << i << std::endl;
   }
 
 }
