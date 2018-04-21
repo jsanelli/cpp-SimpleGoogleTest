@@ -1,22 +1,15 @@
-[==========] Running 4 tests from 3 test cases.
+[==========] Running 2 tests from 2 test cases.
 [----------] Global test environment set-up.
-[----------] 2 tests from HelloWorldTestNumberOne
-[ RUN      ] HelloWorldTestNumberOne.SubTestOne
-[       OK ] HelloWorldTestNumberOne.SubTestOne (0 ms)
-[ RUN      ] HelloWorldTestNumberOne.SubTestTwo
-[       OK ] HelloWorldTestNumberOne.SubTestTwo (0 ms)
-[----------] 2 tests from HelloWorldTestNumberOne (0 ms total)
-
-[----------] 1 test from HelloWorldTestNumberTwo
-[ RUN      ] HelloWorldTestNumberTwo.SubTestOne
-[       OK ] HelloWorldTestNumberTwo.SubTestOne (0 ms)
-[----------] 1 test from HelloWorldTestNumberTwo (0 ms total)
-
 [----------] 1 test from GetChar
 [ RUN      ] GetChar.SubTest1
 [       OK ] GetChar.SubTest1 (0 ms)
 [----------] 1 test from GetChar (0 ms total)
 
+[----------] 1 test from GetSquare
+[ RUN      ] GetSquare.SubTest1
+[       OK ] GetSquare.SubTest1 (0 ms)
+[----------] 1 test from GetSquare (0 ms total)
+
 [----------] Global test environment tear-down
-[==========] 4 tests from 3 test cases ran. (0 ms total)
-[  PASSED  ] 4 tests.
+[==========] 2 tests from 2 test cases ran. (0 ms total)
+[  PASSED  ] 2 tests.

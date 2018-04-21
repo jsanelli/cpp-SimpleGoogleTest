@@ -1,4 +1,3 @@
-char GetChar() { 
-  char retval = 123;
-  return retval;
+char GetChar(char arg) { 
+  return arg;
 }

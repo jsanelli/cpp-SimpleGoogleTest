@@ -1,22 +1,14 @@
 #include <gtest/gtest.h>
 
-#include "../src/sqrt.cc"
 #include "../src/get_char.cc"
+#include "../src/get_square.cc"
  
-TEST(HelloWorldTestNumberOne, SubTestOne) {
-  ASSERT_EQ(6, squareRoot(36.0));
-}
-
-TEST(HelloWorldTestNumberOne, SubTestTwo) {
-  ASSERT_EQ(6, squareRoot(36.0));
-}
-
-TEST(HelloWorldTestNumberTwo, SubTestOne) {
-  ASSERT_EQ(6, squareRoot(36.0));
-}
-
 TEST(GetChar, SubTest1) {
-  ASSERT_EQ(123, GetChar());
+  ASSERT_EQ(123, GetChar(123));
+}
+
+TEST(GetSquare, SubTest1) {
+  ASSERT_EQ(4, GetSquare(2));
 }
 
 int main(int argc, char **argv) {
