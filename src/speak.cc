@@ -22,7 +22,14 @@ Speak::~Speak() {
 }
 
 bool TestSpeak::TestGetI() {
- return fail; // false = fail
+ return false; // false = fail
+}
+
+bool Speak::TestGetI() {
+ bool retval = false;
+ if (GetI() == i_)
+   retval = true;
+ return retval; // false = fail
 }
 
 int Speak::GetI() {
