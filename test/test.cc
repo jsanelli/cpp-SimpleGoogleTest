@@ -22,7 +22,7 @@ TEST(GetChar, SubTest1) {
   // test private functions
 
   // testspeak
-  ASSERT_TRUE(testspeak.TestI(123));  
+  ASSERT_TRUE(testspeak.GetConclusion());  
 
 
 }

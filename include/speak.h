@@ -11,7 +11,7 @@ public:
   void SaySomething();
 
 protected:
-  void SetI(int);
+  bool SetI(int);
 
 private:
   int i_;
@@ -25,7 +25,10 @@ public:
   TestSpeak();
   ~TestSpeak();
 
-  bool TestI(int);
+  bool GetConclusion();
+
+private:
+  bool result_; // false denotes fail
 };
 
 #endif

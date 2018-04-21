@@ -14,8 +14,12 @@ Speak::Speak(int i) {
 Speak::~Speak() {
 }
 
-void Speak::SetI(int i) {
+bool Speak::SetI(int i) {
+  bool retval = false;
   i_ = i;
+  if (i_ == i)
+    retval = true;
+  return retval;
 }
 
 int Speak::GetI() {
@@ -28,11 +32,13 @@ void Speak::SaySomething() {
 
 // TestSpeak //
 TestSpeak::TestSpeak() {
+  int i = 123;
+  result_ = SetI(i);
 }
 
 TestSpeak::~TestSpeak() {
 }
 
-bool TestSpeak::TestI(int i) {
-  return false; // false denotes fail
+bool TestSpeak::GetConclusion() {
+  return result_;
 }
