@@ -1,6 +1,14 @@
+#include <gtest/gtest.h>
+
 #include <iostream>
 
 #include "../include/speak.h"
+
+TestSpeak::TestSpeak() {
+}
+
+TestSpeak::~TestSpeak() {
+}
 
 Speak::Speak() {
   i_ = 2;
