@@ -9,18 +9,21 @@
 TEST(GetChar, SubTest1) {
   auto min = 0;
   auto count = 300;
+  auto x = 0, y = 0;
 
   Speak alice;
   TestSpeak testspeak;
 
   for (auto i=min; i<count; i++) {
+    //test GetChar
     ASSERT_EQ(i, GetChar(i));
-  }
 
-  // test public functions
-  alice.SaySomething();
-  // test private functions
-  ASSERT_TRUE(testspeak.GetConclusion());  
+    // test public functions
+    alice.SaySomething();
+    ASSERT_TRUE(alice.Compare(x, y));
+    // test private functions
+    ASSERT_TRUE(testspeak.GetConclusion());  
+  }
 }
 
 TEST(GetSquare, SubTest1) {

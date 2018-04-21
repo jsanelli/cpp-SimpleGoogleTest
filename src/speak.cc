@@ -14,6 +14,13 @@ Speak::Speak(int i) {
 Speak::~Speak() {
 }
 
+bool Speak::Compare(int x, int y) {
+  bool retval = false;
+  if (x == y)
+    retval = true;
+  return retval;
+}
+
 bool Speak::SetI(int i) {
   bool retval = false;
   i_ = i;

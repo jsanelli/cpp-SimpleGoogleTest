@@ -9,6 +9,7 @@ public:
   ~Speak();
 
   void SaySomething();
+  bool Compare(int, int);
 
 protected:
   bool SetI(int);
