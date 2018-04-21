@@ -22,12 +22,6 @@ TEST(GetSquare, SubTest1) {
   ASSERT_EQ(9, GetSquare(3));
 }
 
-int main(int argc, char **argv) {
-  ::testing::GTEST_FLAG(output) = "xml:results.xml";
-  testing::InitGoogleTest(&argc, argv);
-  return RUN_ALL_TESTS();
-}
- 
 TEST(Speak, SubTest1) {
   auto min = 0;
   auto count = 300;
@@ -41,4 +35,10 @@ TEST(Speak, SubTest1) {
     // test private functions
     ASSERT_TRUE(testspeak.GetConclusion());  
   }
+}
+
+int main(int argc, char **argv) {
+  ::testing::GTEST_FLAG(output) = "xml:results.xml";
+  testing::InitGoogleTest(&argc, argv);
+  return RUN_ALL_TESTS();
 }
