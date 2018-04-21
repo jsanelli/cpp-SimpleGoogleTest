@@ -2,14 +2,22 @@
 
 #include "../src/get_number.cc"
 #include "../src/get_square.cc"
+
+#include "../src/speak.cc"
+#include "../include/speak.h"
  
 TEST(GetChar, SubTest1) {
   auto min = 0;
   auto count = 300;
 
+  Speak alice;
+
   for (auto i=min; i<count; i++) {
     ASSERT_EQ(i, GetChar(i));
   }
+
+  alice.SaySomething();
+  //alice.GetI();
 
 }
 

@@ -2,6 +2,7 @@
 [----------] Global test environment set-up.
 [----------] 1 test from GetChar
 [ RUN      ] GetChar.SubTest1
+Hello Class, your number is 2
 [       OK ] GetChar.SubTest1 (0 ms)
 [----------] 1 test from GetChar (0 ms total)
 
