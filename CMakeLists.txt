@@ -8,7 +8,7 @@ find_package(GTest REQUIRED)
 include_directories(${GTEST_INCLUDE_DIRS})
  
 #add_executable(${TARGET_NAME} test.cc)
-file(GLOB SOURCES "*.cc")
+file(GLOB SOURCES "test/*.cc")
 #file(GLOB SOURCES "src/*.cc")
 add_executable (${TARGET_NAME} ${SOURCES})
 

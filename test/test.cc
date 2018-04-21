@@ -1,4 +1,4 @@
-#include "sqrt.cpp"
+#include "sqrt.cc"
 #include <gtest/gtest.h>
  
 TEST(SquareRootTest, PositiveNos) 

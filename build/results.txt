@@ -5,7 +5,7 @@
 [       OK ] SquareRootTest.PositiveNos (0 ms)
 [ RUN      ] SquareRootTest.NegativeNos
 [       OK ] SquareRootTest.NegativeNos (0 ms)
-[----------] 2 tests from SquareRootTest (0 ms total)
+[----------] 2 tests from SquareRootTest (1 ms total)
 
 [----------] Global test environment tear-down
 [==========] 2 tests from 1 test case ran. (1 ms total)
