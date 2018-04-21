@@ -19,7 +19,6 @@ TEST(GetChar, SubTest1) {
     ASSERT_EQ(i, GetChar(i));
 
     // test public functions
-    alice.SaySomething();
     ASSERT_TRUE(alice.Compare(x, y));
     // test private functions
     ASSERT_TRUE(testspeak.GetConclusion());  

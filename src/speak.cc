@@ -33,10 +33,6 @@ int Speak::GetI() {
   return i_;
 }
 
-void Speak::SaySomething() {
-  std::cout << "Hello Class, your number is " << GetI() << std::endl;
-}
-
 // TestSpeak //
 TestSpeak::TestSpeak() {
   int i = 123;
