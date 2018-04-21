@@ -6,13 +6,14 @@
 #include "../src/get_square.cc"
  
 TEST(GetChar, SubTest1) {
-  int min = 0;
-  int count = 10;
+  auto min = 0;
+  auto count = 300;
 
-  for (int i=min; i<count; i++) {
+  for (auto i=min; i<count; i++) {
     ASSERT_EQ(i, GetChar(i));
     std::cout << "i = " << i << std::endl;
   }
+
 }
 
 TEST(GetSquare, SubTest1) {
