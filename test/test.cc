@@ -9,7 +9,6 @@
 TEST(GetChar, SubTest1) {
   auto min = 0;
   auto count = 300;
-  auto result = false;
 
   Speak alice;
   TestSpeak testspeak;
@@ -18,10 +17,10 @@ TEST(GetChar, SubTest1) {
     ASSERT_EQ(i, GetChar(i));
   }
 
+  //test public functions
   alice.SaySomething();
-  //alice.GetI();
-  result = testspeak.TestGetI();
-  ASSERT_EQ(true, testspeak.TestGetI());
+  // test private functions
+  ASSERT_TRUE(testspeak.TestGetI()); 
 }
 
 TEST(GetSquare, SubTest1) {
